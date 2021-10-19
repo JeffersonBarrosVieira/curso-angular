@@ -16,7 +16,7 @@ export class OutputPropertyComponent implements OnInit {
   incrementa(){
     console.log(this.campoValorInput.nativeElement.value);
     this.valor++;
-    this.mudouValor.emit({novoValor: this.valor}) //emitir qualquer coisa para o componente pai, seja string número ou até um objeto complexo
+    this.mudouValor.emit({novoValor: this.valor}); //emitir qualquer coisa para o componente pai, seja string número ou até um objeto complexo
   }
 
   decrementa(){
