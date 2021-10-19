@@ -21,7 +21,7 @@ export class OutputPropertyComponent implements OnInit {
 
   decrementa(){
     this.valor--;
-    this.mudouValor.emit({novoValor: this.valor})
+    this.mudouValor.emit({novoValor: this.valor});
   }
 
   constructor() { }
