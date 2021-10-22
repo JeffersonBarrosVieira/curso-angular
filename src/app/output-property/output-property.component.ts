@@ -14,8 +14,8 @@ export class OutputPropertyComponent implements OnInit {
   @ViewChild('campoInput', {static: false}) campoValorInput!: ElementRef; // esse decorator seleciona o elemento pela variável com a hashtag em qualquer tag html ou componente 
 
   incrementa(){
-    console.log(this.campoValorInput.nativeElement.value);
     this.valor++;
+    console.log(this.campoValorInput.nativeElement.value);
     this.mudouValor.emit({novoValor: this.valor}); //emitir qualquer coisa para o componente pai, seja string número ou até um objeto complexo
   }
 
